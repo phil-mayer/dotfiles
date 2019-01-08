@@ -1,6 +1,6 @@
 # Ignore all files and folders
 *
-# Exceptions. Use .bash_login to override any values set in .bash_profile, or for any additonal configuration.
+# Exceptions. Use .bash_overrides to override any values set in .bash_profile, or for any additonal configuration.
 !.bash_aliases
 !.bash_profile
 !.gitignore
