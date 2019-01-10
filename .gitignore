@@ -1,7 +1,9 @@
 # Ignore all files and folders
 *
+!.bin/
 # Exceptions. Use .bash_overrides to override any values set in .bash_profile, or for any additonal configuration.
 !.bash_aliases
 !.bash_profile
 !.gitignore
+!.bin/git-dotfiles-setup
 

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# git-dotfiles-setup
+
+# Simply cloning this repository into the user's home directory would override the existing .git folder.
+# Instead, this shell script automates setup.
+# Note: copy this folder from the GitHub user interface and execute.
+
+git init --bare ~/.git-dotfiles
+alias git-dotfiles="git --git-dir=$HOME/.git-dotfiles --work-tree=$HOME"
+
+git-dotfiles remote add origin https://github.com/phil-mayer/dotfiles.git
+git-dotfiles pull
+git-dotfiles checkout master
+
