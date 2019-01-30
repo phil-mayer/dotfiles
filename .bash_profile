@@ -11,8 +11,9 @@ PS1="\[\e[34m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]: \W\$(parse_git
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-. ~/.bash_overrides
+if [ -f ~/.bash_overrides ]; then
+    . ~/.bash_overrides
+fi
 
 # Additional PATH entries
 PATH=$PATH:~/Scripts
