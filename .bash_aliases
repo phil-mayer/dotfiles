@@ -1,4 +1,5 @@
 # Convenience
+alias cp="cp -i"
 alias ll="ls -la"
 alias gitb="git branch"
 alias gitd="git diff"

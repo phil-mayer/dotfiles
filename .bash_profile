@@ -2,10 +2,7 @@
 # Phil Mayer
 
 # Customize prompt
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-PS1="\[\e[34m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]: \W\$(parse_git_branch)\[\033[00m\] \n\\$ "
+PS1="\[$(tput setaf 4)\]\[$(tput bold)\]\u \[$(tput sgr0)\][\[$(tput setaf 2)\]\w\[$(tput sgr0)\]] \\$ \[$(tput sgr0)\]"
 
 # Aliases
 if [ -f ~/.bash_aliases ]; then
