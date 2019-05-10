@@ -13,3 +13,6 @@ alias docker-cleanup="docker system prune --volumes"
 # Git for local dotfiles repo
 alias git-dotfiles="git --git-dir=$HOME/.git-dotfiles --work-tree=$HOME"
 
+# Homebrew
+alias brewski="brew update; brew cleanup -s; brew doctor"
+
