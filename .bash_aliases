@@ -17,4 +17,5 @@ alias git-dotfiles="git --git-dir=$HOME/.git-dotfiles --work-tree=$HOME"
 
 # Homebrew
 alias brewski="brew update; brew cleanup -s; brew doctor"
+# alias brew-dependency-list="brew leaves | xargs brew deps --installed --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/""
 
