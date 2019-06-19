@@ -14,4 +14,3 @@ fi
 
 # Additional PATH entries
 PATH=$PATH:~/Scripts
-
