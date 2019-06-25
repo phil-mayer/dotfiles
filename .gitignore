@@ -4,6 +4,7 @@
 # Exceptions. Use .bash_overrides to override any values set in .bash_profile, or for any additonal configuration.
 !.bash_aliases
 !.bash_profile
+!.gitconfig
 !.gitignore
 !.vimrc
 !.bin/git-dotfiles-setup
