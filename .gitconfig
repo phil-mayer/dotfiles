@@ -1,0 +1,22 @@
+[user]
+    name = Phil Mayer
+    email = phil.mayer93@gmail.com
+
+[alias]
+    b = branch
+    d = diff
+    l = log --oneline
+    s = status
+
+[core]
+    editor = vim
+
+[credential]
+    helper = osxkeychain
+
+[diff]
+    mnemonicprefix = true
+
+[push]
+    default = simple
+
