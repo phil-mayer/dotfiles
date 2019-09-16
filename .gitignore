@@ -1,12 +1,2 @@
-# Ignore all files and folders
-*
-!.bin/
-# Exceptions. Use .bash_overrides to override any values set in .bash_profile, or for any additonal configuration.
-!.bash_aliases
-!.bash_profile
-!.editorconfig
-!.gitconfig
-!.gitignore
-!.vimrc
-!.bin/git-dotfiles-setup
-
+# OS-generated
+.DS_Store

@@ -38,6 +38,5 @@ xcrun simctl delete unavailable
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap homebrew/cask
 
-brew install ack ansible autojump bash-completion composer exa git gradle http-server httpie inetutils jenv jq maven mysql nmap nvm pkg-config postgresql ssh-copy-id tldr tree wget yarn zsh
-brew cask install docker firefox google-backup-and-sync google-chrome iterm2 java spotify visual-studio-code virtualbox vlc
-
+brew install ack autojump exa git httpie inetutils jenv jq nmap nvm pkg-config postgresql ssh-copy-id tldr tree wget yarn zsh
+brew cask install docker firefox google-backup-and-sync google-chrome iterm2 spotify visual-studio-code vlc
