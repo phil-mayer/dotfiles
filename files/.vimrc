@@ -13,4 +13,3 @@ set hlsearch
 
 " Syntax highlighting
 syntax on
-

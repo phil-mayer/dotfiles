@@ -34,9 +34,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 xcode-select --install
 xcrun simctl delete unavailable
 
-# Install Homebrew, Homebrew Cask
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew tap homebrew/cask
+brew install ack autojump git httpie inetutils nmap pkg-config postgresql ssh-copy-id tldr tree wget yarn
 
-brew install ack autojump exa git httpie inetutils jenv jq nmap nvm pkg-config postgresql ssh-copy-id tldr tree wget yarn zsh
+brew tap homebrew/cask
 brew cask install docker firefox google-backup-and-sync google-chrome iterm2 spotify visual-studio-code vlc

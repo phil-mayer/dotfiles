@@ -4,10 +4,21 @@
 # Author: Phil Mayer
 # Modified: 9/16/19
 
+# Make sure Homebrew is installed.
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Some of my aliases require additional programs (see the "catp" alias). Install these now.
+brew install exa jq
+
+# My dotfile configuration includes jEnv and NVM. Make sure jEnv is installed and remove any current installations of
+# NVM, as they will cause the zsh-nvm plugin to fail its setup.
+brew install jenv
+rm -rf $HOME/.nvm
+
 # Copy files into place
 cp files/* ~
 
-# Install zsh and set as the default shell
+# Install zsh (just in case, though it should be installed already) and set as the default shell
 brew install zsh
 chsh -s /bin/zsh
 
