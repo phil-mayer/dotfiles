@@ -1,3 +1,7 @@
+# To profile this configuration (e.g. if a plugin is being slow), uncomment the
+# following line, reload the shell, then run "zprof".
+# zmodload zsh/zprof
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -72,7 +76,7 @@ export NVM_LAZY_LOAD=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew git jenv nvm zsh-nvm)
+plugins=(brew git zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,10 +93,6 @@ export GIT_EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# Other configuration
-eval "$(jenv init -)"
-export PATH="$HOME/.jenv/bin:$PATH"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
