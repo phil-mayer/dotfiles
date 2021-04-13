@@ -103,11 +103,5 @@ export GIT_EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -f ~/.zsh_aliases ]; then
-    . ~/.zsh_aliases
-fi
-
-if [ -f ~/.zsh_overrides ]; then
-    . ~/.zsh_overrides
-fi
-
+# NOTE!
+# ~/.zsh_overrides moved to $ZSH_CUSTOM/overrides.zsh

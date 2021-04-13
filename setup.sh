@@ -14,12 +14,16 @@ set -x
 
 # Some of my aliases require additional programs (see the "catp" alias). I also kick off jEnv in my zsh configuration.
 # Install these dependencies now, as well as zsh (just in case, though it should be installed already).
-brew install exa jenv jq zsh
+brew install exa fzf jq zsh
 # Remove any current installations of NVM, as they will cause the zsh-nvm plugin to fail its setup.
-rm -rf $HOME/.nvm
+rm -rf ~/.nvm
 
 # Copy files into place
-/bin/cp -vr ./files/. $HOME/
+/bin/cp -vr ./files/.editorconfig ~
+/bin/cp -vr ./files/.gitconfig ~
+/bin/cp -vr ./files/.vimrc ~
+/bin/cp -vr ./files/.zshrc ~
+/bin/cp -vr ./files/aliases.zsh $ZSH_CUSTOM/aliases.zsh
 
 # Remove bash configuration files and move overrides files.
 rm ~/.bash_profile ~/.bash_aliases
