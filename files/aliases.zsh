@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-alias brewski="brew update; brew upgrade; brew cleanup -s; brew doctor"
+alias brewski="brew update; brew upgrade; brew autoremove; brew cleanup -s; brew doctor"
 alias catp="cat package.json | jq -S .scripts | prettyjson"
 alias cp="cp -i"
 alias ll="exa --long --all --group --header --accessed --created --git"
