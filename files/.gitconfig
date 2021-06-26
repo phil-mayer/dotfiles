@@ -7,7 +7,6 @@
     d = diff
     l = log --oneline
     s = status
-    nuke = !sh -c 'git branch | grep -v "master" | grep -v "develop" | xargs git branch -D' -
 
 [core]
     editor = vim
@@ -24,3 +23,6 @@
 
 [pull]
     rebase = true
+
+[push]
+    default = simple
