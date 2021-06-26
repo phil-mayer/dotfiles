@@ -19,8 +19,8 @@
 [diff]
     mnemonicprefix = true
 
-[push]
-    default = simple
+[init]
+    defaultBranch = main
 
 [pull]
     rebase = true
