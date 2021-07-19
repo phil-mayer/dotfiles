@@ -2,6 +2,7 @@
 set cursorline
 set lazyredraw
 set number
+set ruler
 set showcmd
 set showmatch
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
