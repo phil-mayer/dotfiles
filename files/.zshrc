@@ -76,7 +76,20 @@ export NVM_LAZY_LOAD=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew git zsh-nvm)
+case "$OSTYPE" in
+  darwin*)
+    OS_NAME='macos'
+  ;;
+  linux*)
+    OS_NAME='linux'
+  ;;
+esac
+
+if [ $OS_NAME = 'macos' ]; then
+  plugins=(brew git zsh-nvm)
+else
+  plugins=(git zsh-nvm)
+fi
 
 source $ZSH/oh-my-zsh.sh
 

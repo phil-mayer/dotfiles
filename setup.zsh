@@ -20,19 +20,30 @@ install_brew_dependency() {
   fi
 }
 
-if type "brew" > /dev/null; then
-  info 'Homebrew is installed ✅'
-else
-  info 'Installing Homebrew...'
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+case "$OSTYPE" in
+  darwin*)
+    OS_NAME='macos'
+  ;;
+  linux*)
+    OS_NAME='linux'
+  ;;
+esac
 
-# Some of my aliases require additional programs (see the "catp" alias). Install these, as well as the latest version of
-# zsh for the latest features.
-install_brew_dependency "exa"
-install_brew_dependency "fzf"
-install_brew_dependency "jq"
-install_brew_dependency "zsh" # so that we have the latest version
+if [ $OS_NAME = 'macos' ]; then
+  if type "brew" > /dev/null; then
+    info 'Homebrew is installed ✅'
+  else
+    info 'Installing Homebrew...'
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  fi
+
+  # Some of my aliases require additional programs (see the "catp" alias).
+  # Install these, as well as the latest version of zsh for the latest features.
+  install_brew_dependency "exa"
+  install_brew_dependency "fzf"
+  install_brew_dependency "jq"
+  install_brew_dependency "zsh" # so that we have the latest version
+fi
 
 if [ -d "$ZSH" ]; then
   info 'Oh My ZSH is installed ✅'
