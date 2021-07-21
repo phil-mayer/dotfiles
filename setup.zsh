@@ -76,7 +76,6 @@ ln -sf "$(pwd)/files/.gitconfig" ~/.gitconfig
 ln -sf "$(pwd)/files/.vimrc" ~/.vimrc
 ln -sf "$(pwd)/files/.zshrc" ~/.zshrc
 ln -sf "$(pwd)/files/aliases.zsh" $ZSH/custom/aliases.zsh
-ln -sf "$(pwd)/files/fzf.zsh" $ZSH/custom/fzf.zsh
 
 info 'Symlinks created ✅'
 

@@ -90,9 +90,9 @@ export NVM_LAZY_LOAD=true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 if [ $OS_NAME = 'macos' ]; then
-  plugins=(brew git zsh-nvm)
+  plugins=(brew fzf git zsh-nvm)
 else
-  plugins=(git zsh-nvm)
+  plugins=(fzf git zsh-nvm)
 fi
 
 source $ZSH/oh-my-zsh.sh
