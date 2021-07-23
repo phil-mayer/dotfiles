@@ -2,7 +2,7 @@
 
 # setup.zsh
 # Author: Phil Mayer
-# Modified: 07/19/21
+# Modified: 07/23/21
 
 set -euo pipefail
 IFS=$'\n\t'

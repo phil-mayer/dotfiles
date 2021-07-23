@@ -15,6 +15,11 @@ esac
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Homebrew currently has some dependencies that link to /usr/local/sbin.
+if [ $OS_NAME = 'macos' ]; then
+  export PATH="/usr/local/sbin:$PATH"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
