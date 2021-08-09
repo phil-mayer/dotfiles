@@ -2,21 +2,11 @@
 # following line, reload the shell, then run "zprof".
 # zmodload zsh/zprof
 
-# Set a custom $OS_NAME variable for later checks.
-case "$OSTYPE" in
-  darwin*)
-    OS_NAME='macos'
-  ;;
-  linux*)
-    OS_NAME='linux'
-  ;;
-esac
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Homebrew currently has some dependencies that link to /usr/local/sbin.
-if [ $OS_NAME = 'macos' ]; then
+if [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH="/usr/local/sbin:$PATH"
 fi
 
@@ -27,11 +17,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-if [ $OS_NAME = 'macos' ]; then
-  ZSH_THEME="agnoster"
-else
-  ZSH_THEME="robbyrussell"
-fi
+# Previously used "agnoster" on MacOS and "robbyrussell" on Linux.
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

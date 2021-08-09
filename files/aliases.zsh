@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 alias brewski="brew update; brew upgrade; brew autoremove; brew cleanup -s; brew doctor"
 alias catp="cat package.json | jq -S .scripts | prettyjson"
