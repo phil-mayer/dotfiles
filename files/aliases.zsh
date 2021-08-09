@@ -11,3 +11,7 @@ gbdel() {
   branch=$(echo "$branches" | fzf --multi ) &&
   git branch -D $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
 }
+
+greb() {
+  git rebase -i HEAD~$1 --autostash
+}
