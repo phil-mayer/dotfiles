@@ -1,8 +1,4 @@
-#!/bin/zsh
-
-# setup.zsh
-# Author: Phil Mayer
-# Modified: 07/23/21
+#!/usr/bin/env zsh
 
 set -euo pipefail
 IFS=$'\n\t'
@@ -76,6 +72,7 @@ ln -sf "$(pwd)/files/.gitconfig" ~/.gitconfig
 ln -sf "$(pwd)/files/.vimrc" ~/.vimrc
 ln -sf "$(pwd)/files/.zshrc" ~/.zshrc
 ln -sf "$(pwd)/files/aliases.zsh" $ZSH/custom/aliases.zsh
+ln -sf "$(pwd)/files/doriath.zsh-theme" $ZSH/custom/themes/doriath.zsh-theme
 
 info 'Symlinks created ✅'
 

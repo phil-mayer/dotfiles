@@ -1,7 +1,4 @@
-# Machine Setup
-# Author: Phil Mayer
-# Modified: 11/5/18
-
+#!/usr/bin/env zsh
 
 # Dock
 defaults write com.apple.dock autohide -bool true && killall Dock
@@ -28,13 +25,3 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 # Don't pollute network drives and USB volumes with .DS_Store files
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
-
-# Libraries
-# Xcode: install command-line tools without installing full Xcode, remove all unavailable simulators.
-xcode-select --install
-xcrun simctl delete unavailable
-
-brew install ack autojump git httpie inetutils nmap pkg-config postgresql ssh-copy-id tldr tree wget yarn
-
-brew tap homebrew/cask
-brew cask install docker firefox google-backup-and-sync google-chrome iterm2 spotify visual-studio-code vlc
