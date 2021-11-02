@@ -6,7 +6,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Homebrew currently has some dependencies that link to /usr/local/sbin.
-if [[ "$OSTYPE" == "darwin"* ]]; then
+ARCH="$(arch)"
+if [[ "$OSTYPE" == "darwin"* && ARCH == "arm64" ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ "$OSTYPE" == "darwin"* && ARCH == "i386" ]]; then
   export PATH="/usr/local/sbin:$PATH"
 fi
 
