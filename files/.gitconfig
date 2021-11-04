@@ -5,7 +5,7 @@
 [alias]
     b = branch
     d = diff
-    l = log --oneline
+    l = log --graph --oneline
     s = status
 
 [core]
