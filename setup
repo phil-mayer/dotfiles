@@ -37,7 +37,7 @@ if [ $OS_NAME = 'macos' ]; then
   # Install these, as well as the latest version of zsh for the latest features.
   install_brew_dependency "exa"
   install_brew_dependency "fzf"
-  install_brew_dependency "jq"
+  install_brew_dependency "jql"
   install_brew_dependency "zsh" # so that we have the latest version
 fi
 

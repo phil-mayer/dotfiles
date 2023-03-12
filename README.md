@@ -29,7 +29,7 @@ The table below details the main contents of the repository.
 
 ## Installation
 
-Before proceeding, Linux users will need to install `exa`, `fzf`, `jq`, and the upgrade their version of `zsh`. After
+Before proceeding, Linux users will need to install `exa`, `fzf`, `jql`, and the upgrade their version of `zsh`. After
 doing so, run:
 
 ```(sh)
