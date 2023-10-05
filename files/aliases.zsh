@@ -3,7 +3,7 @@
 alias brewski="brew update; brew upgrade; brew autoremove; brew cleanup -s; brew doctor"
 alias catp="cat package.json | jql '\"scripts\"'"
 alias cp="cp -i"
-alias ll="exa --long --all --group --header --accessed --created --git"
+alias ll="eza --long --all --group --header --accessed --created --git"
 
 alias gch="git for-each-ref --format='%(refname:short)' --sort=-committerdate refs/heads | fzf | xargs git checkout"
 
