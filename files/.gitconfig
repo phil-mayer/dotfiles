@@ -1,29 +1,56 @@
 [user]
-    name = Phil Mayer
-    email = me@pmayer.dev
-
-[alias]
-    b = branch
-    d = diff
-    l = log --graph --oneline
-    s = status
+  name = Phil Mayer
+  email = me@pmayer.dev
 
 [core]
-    editor = vim
-    excludesFile = ~/.gitignore
-    trustctime = false
+  editor = vim
+  excludesFile = ~/.gitignore
+  trustctime = false
 
 [credential]
-    helper = osxkeychain
+  helper = osxkeychain
+
+[alias]
+  b = branch
+  d = diff
+  l = log --graph --oneline
+  s = status
+
+[branch]
+  sort = -committerdate
 
 [diff]
-    mnemonicprefix = true
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+
+[fetch]
+  all = true
+  prune = true
+  pruneTags = true
+
+[help]
+  autocorrect = prompt
 
 [init]
-    defaultBranch = main
+  defaultBranch = main
+
+[merge]
+  conflictstyle = zdiff3
 
 [pull]
-    rebase = true
+  rebase = true
 
 [push]
-    default = simple
+  autoSetupRemote = true
+  default = simple
+  followTags = true
+
+[rebase]
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
+
+[tag]
+  sort = version:refname
