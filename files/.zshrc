@@ -77,7 +77,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Set plugin configuration here (before plugins are loaded)
-export NVM_LAZY_LOAD_EXTRA_COMMANDS=('yarn')
+export NVM_LAZY_LOAD_EXTRA_COMMANDS=('yarn', 'pnpm')
 export NVM_LAZY_LOAD=true
 
 # Which plugins would you like to load?
